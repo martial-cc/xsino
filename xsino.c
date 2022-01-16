@@ -48,7 +48,7 @@ static Window rw;
 static int h, w, x, xx, y, yy;
 
 void x_clean(void) {
-	return;
+	(void) XCloseDisplay(d);
 }
 
 int x_loadcursor(void) {
